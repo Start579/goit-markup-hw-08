@@ -1,0 +1,28 @@
+.checkbox {
+  @include centeredFlex();
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.checkbox__option {
+  padding-left: 1.2em;
+}
+.checkbox__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+.checkbox__input:checked + .checkbox__lable {
+  background-image: url("../images/check-hover.svg");
+}
+.checkbox__lable {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  background-image: url("../images/check.svg");
+  width: 16px;
+  height: 15px;
+  left: 52px;
+  transform: translateY(20%);
+}

@@ -1,0 +1,20 @@
+
+.nav__logo {
+    font-weight: $accent-font-weight;
+    font-family: raleway;
+    font-size: 26px;
+    color: $accent-color;
+}
+.nav__logo--color {
+// .logo--color {
+    color: $second-color;
+}
+.logo {
+    color: $accent-secondary-color;
+    font-weight: $accent-font-weight;
+    font-family: raleway;
+    font-size: 26px;
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}

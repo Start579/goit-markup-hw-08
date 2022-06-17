@@ -1,0 +1,43 @@
+.menu {
+  @include centeredFlex();
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.menu__btn__item {
+  margin-right: 8px;
+}
+.menu__btn__item:last-child {
+  margin-right: 0;
+}
+.menu__btn__first {
+  padding: 6px 22px 6px 22px;
+  font-size: $secondary-font-size;
+  line-height: 1.62;
+  text-align: center;
+  color: $second-color;
+  background-color: $accent-color;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.menu__btn__first:hover,
+.menu__btn__first:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.menu__btn {
+  padding: 6px 22px 6px 22px;
+  font-size: $secondary-font-size;
+  line-height: 1.62;
+  text-align: center;
+  color: $accent-secondary-color;
+  background-color: $second-bacground-color;
+  border-radius: 4px;
+  cursor: pointer;
+  border: transparent;
+}
+.menu__btn:focus,
+.menu__btn:hover {
+  background-color: $accent-color;
+  color: $second-color;
+}

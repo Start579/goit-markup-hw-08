@@ -1,0 +1,29 @@
+.description {
+  margin-right: 30px;
+}
+.description:last-child {
+  margin-right: 0;
+}
+.description__item {
+  background-color: $second-bacground-color;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-description-indent {
+  margin-right: 0;
+}
+.description__header {
+  font-size: 14px;
+  line-height: $accent-line-height;
+  text-transform: uppercase;
+  color: $accent-bacground-color;
+  margin-top: 30px;
+}
+.description__text {
+  margin-top: 10px;
+  line-height: 1.71;
+}

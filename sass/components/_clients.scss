@@ -1,0 +1,37 @@
+.clients {
+  margin-bottom: 50px;
+  font-weight: $accent-font-weight;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $accent-bacground-color;
+  @include centeredFlex(block);
+}
+.clients__icon {
+  @include centeredFlex();
+  align-items: center;
+  justify-content: center;
+}
+.clients__item {
+  margin-right: 30px;
+}
+.clients__item:last-child {
+  margin-right: 0;
+}
+.clients__icon--item {
+  @include centeredFlex();
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  cursor: pointer;
+  fill: #afb1b8;
+  align-items: center;
+  justify-content: center;
+  transition: fill 250ms $cubic, border 250ms $cubic;
+}
+.clients-icon-item:hover {
+  border: 1px solid $accent-color;
+  fill: $accent-color;
+  transition: fill 250ms $cubic, border 250ms $cubic;
+}

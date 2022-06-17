@@ -1,0 +1,45 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./base/normalise";
+@import "./base/styles";
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/contacts";
+@import "./components/hero";
+@import "./components/description";
+@import "./components/work";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/join";
+@import "./components/subscribe";
+@import "./components/modal";
+@import "./components/checkbox";
+@import "./components/card";
+@import "./components/menu";
+
+.nav {
+    @include centeredFlex();
+}
+.container {
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;  
+}
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px; 
+}
+body {
+  font-family: $accent-font;
+  background-color: $second-color;
+  font-size: $accent-font-size;
+  color: $accent-font-color;
+  letter-spacing: 0.03em;
+}
+.header {
+  border-bottom: 1px solid #ececec;
+}

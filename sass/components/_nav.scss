@@ -1,0 +1,39 @@
+.box {
+  list-style: none;
+  box-sizing: border-box;
+  margin-left: auto;
+  justify-content: space-between;
+  align-items: center;
+  @include centeredFlex();
+}
+.nav__style {
+  font-weight: $second-font-weight;
+  line-height: $accent-line-height;
+  letter-spacing: 0.02em;
+  color: $accent-bacground-color;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+}
+.nav__menu {
+  margin-right: 50px;
+}
+.nav__menu:last-child {
+  margin-right: 0px;
+}
+.nav__style:hover,
+.nav__style:focus,
+.current {
+  color: $accent-color;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}

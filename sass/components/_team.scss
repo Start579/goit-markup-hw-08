@@ -1,0 +1,70 @@
+.section__team {
+  background-color: $second-bacground-color;
+}
+.team__card {
+  background-color: $second-color;
+  margin-right: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+.team__card:last-child {
+  margin-right: 0;
+}
+.team__header {
+  margin-bottom: 50px;
+  font-weight: $accent-font-weight;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: $accent-bacground-color;
+}
+.team__command {
+  font-size: $secondary-font-size;
+  line-height: 1.19;
+  text-align: center;
+  color: $accent-bacground-color;
+}
+.team__profession {
+  margin-bottom: 16px;
+  margin-top: 10px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team__block {
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.team__icon {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.team__item {
+  margin-right: 10px;
+}
+.team__item:last-child {
+margin-right: 0;
+}
+.team__icon__item {
+  background-color: transparent;
+  fill: #afb1b8;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  transition: fill 250ms $cubic, background-color 250ms $cubic;
+}
+.team__icon__item--color {
+  fill: $second-color;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.team__icon__item:hover {
+  background-color: $accent-color;
+  fill: $second-color;
+  border: none;
+}
