@@ -10,12 +10,12 @@
   text-transform: uppercase;
 }
 .join__icon {
-  @include centeredFlex();
-  @include centeredJustify();
+  // @include centeredFlex();
+  // @include centeredJustify();
   cursor: pointer;
   margin-top: 20px;
 }
 .footer__block {
-  @include centeredFlex();
-  @include centeredAlight(baseline);
+  // @include centeredFlex();
+  // @include centeredAlight(baseline);
 }

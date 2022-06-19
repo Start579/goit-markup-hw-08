@@ -1,37 +1,57 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/placeholders";
+@import "./utils/breakpoint";
 @import "./base/normalise";
 @import "./base/styles";
-@import "./components/page-header";
-@import "./components/logo";
-@import "./components/nav";
-@import "./components/contacts";
-@import "./components/hero";
+// @import "./components/page-header";
+// @import "./components/logo";
+// @import "./components/nav";
+// @import "./components/contacts";
+// @import "./components/hero";
 @import "./components/description";
 @import "./components/work";
-@import "./components/team";
-@import "./components/clients";
-@import "./components/footer";
-@import "./components/join";
-@import "./components/subscribe";
-@import "./components/modal";
-@import "./components/checkbox";
-@import "./components/card";
-@import "./components/menu";
+// @import "./components/team";
+// @import "./components/clients";
+// @import "./components/footer";
+// @import "./components/join";
+// @import "./components/subscribe";
+// @import "./components/modal";
+// @import "./components/checkbox";
+// @import "./components/card";
+// @import "./components/menu";
 
 .nav {
-    @include centeredFlex();
+  // @include centeredFlex();
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -10px;
+  }
 }
+// .adaptive
 .container {
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
     width: 1200px;
-    margin: auto;
-    padding-left: 15px;
-    padding-right: 15px;  
+  }
 }
+
 .section {
-   padding-top: 94px;
-   padding-bottom: 94px; 
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 body {
   font-family: $accent-font;
@@ -39,7 +59,18 @@ body {
   font-size: $accent-font-size;
   color: $accent-font-color;
   letter-spacing: 0.03em;
+
+  // @media (min-width: 800px) {
+  //       background-color: aqua;
+  // }
 }
 .header {
   border-bottom: 1px solid #ececec;
 }
+
+// @media (min-width: 800px)
+
+// @media screen and (max-width: 767px) {
+// margin-bottom: 30px;
+// }
+// flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке)

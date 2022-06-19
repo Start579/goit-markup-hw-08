@@ -4,7 +4,7 @@
   margin-left: auto;
   justify-content: space-between;
   align-items: center;
-  @include centeredFlex();
+  // @include centeredFlex();
 }
 .nav__style {
   font-weight: $second-font-weight;
