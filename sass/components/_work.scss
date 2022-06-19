@@ -1,4 +1,5 @@
 .work {
+
   margin-bottom: 50px;
   font-weight: $accent-font-weight;
   font-size: 36px;
@@ -13,6 +14,9 @@
   margin-right: 0;
 }
 .section__ident {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
   padding-top: 0;
 }
 .work__text {
