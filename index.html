@@ -18,11 +18,27 @@
   <body>
     <!--header-->
     <header class="header">
-      <div class="container nav">
+      <div class="container logo__position">
         <nav class="nav">
           <a class="logo nav__link" href="index.html"
             ><span class="nav__logo" lang="en">Web</span>Studio</a
           >
+          <button type="button" class="nav__menu__btn is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button>
+            <svg 
+            width="40" 
+            height="40"
+            aria-label="Мобильное меню"
+            >
+              <use class="nav__menu__open" href="./images/symbol.svg#close"></use>
+              <use class="nav__menu__close" href="./images/symbol.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="nav__menu__container" id="nav__menu__container" data-menu>
+            menu
+          </div>
           <ul class="nav">
             <li class="nav__menu">
               <a class="nav nav__style current link" href="index.html"
@@ -162,7 +178,7 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="nav">
             <li class="team__card">
-              <img
+              <img class="team__image"
                 src="./images/id.jpg"
                 alt="Игорь Демьяненко"
                 width="270"
@@ -223,7 +239,7 @@
               </div>
             </li>
             <li class="team__card">
-              <img
+              <img class="team__image"
                 src="./images/or.jpg"
                 alt="Ольга Репина"
                 width="270"
@@ -284,7 +300,7 @@
               </div>
             </li>
             <li class="team__card">
-              <img
+              <img class="team__image"
                 src="./images/nt.jpg"
                 alt="Николай Тарасов"
                 width="270"
@@ -345,7 +361,7 @@
               </div>
             </li>
             <li class="team__card">
-              <img
+              <img class="team__image"
                 src="./images/me.jpg"
                 alt="Михаил Ермаков"
                 width="270"
@@ -456,12 +472,13 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer__block">
-        <div>
-          <a class="logo nav__link" href="index.html"
+        <div class="box">
+          <div>
+          <a class="logo nav__link--footer" href="index.html"
             ><span class="nav__logo" lang="en">Web</span><span class="nav__logo--color">Studio</span></a
           >
           <address>
-            <ul>
+            <ul class="box__content">
               <li class="box__item">
                 <a
                   class="contact__adress link"
@@ -534,6 +551,7 @@
             </li>
           </ul>
         </div>
+      </div>
         <!--subscribe-->
         <form class="subscribe">
           <p class="subscribe__header">подпишитесь на рассылку</p>

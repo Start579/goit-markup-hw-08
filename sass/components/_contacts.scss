@@ -15,6 +15,11 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .contact__position {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+  }
+.contact__position {
   margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -40,6 +45,8 @@
   transition: color 250ms $cubic;
 }
 .contact {
-  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+          margin-left: auto;
   align-items: center;
+  }
 }

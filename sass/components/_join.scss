@@ -1,5 +1,10 @@
 .join {
-  margin-left: 70px;
+  @media screen and (min-width: 767px) {
+  margin-top: 0;
+  margin-left: 165px;
+    }
+  // margin-left: 70px;
+  margin-top: 60px;
 }
 .join__header {
   font-family: $accent-font;
@@ -8,14 +13,19 @@
   line-height: $accent-line-height;
   color: $second-color;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 .join__icon {
+  display: flex;
+  justify-content: center;
   // @include centeredFlex();
   // @include centeredJustify();
   cursor: pointer;
   margin-top: 20px;
 }
 .footer__block {
+
   // @include centeredFlex();
   // @include centeredAlight(baseline);
 }

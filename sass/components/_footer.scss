@@ -9,11 +9,23 @@
 }
 
 .box__item {
-  margin-top: 9px;
+  margin-top: 8px;
 }
 
 .footer {
   background-color: $accent-bacground-color;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.box__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.box {
+@media screen and (min-width: 767px) {
+display: flex;
+align-items: baseline;
+justify-content: center;
+}
 }
