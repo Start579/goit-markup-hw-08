@@ -1,13 +1,20 @@
 .backdrop {
+//   @media screen and (min-width: 479px) {
+//  max-width: 450px;
+//   }
+@media screen and (max-width: 479px) {
+  padding: 93px 15px;
+}
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
   transition: opacity 500ms $cubic;
+overflow-y: scroll;
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -15,18 +22,30 @@
   pointer-events: none;
 }
 .modal {
+  @media screen and (min-width: 479px) {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: $second-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ }  
+ @media screen and (max-width: 479px) {
+  // max-width: 479px;
+  // width: 450px;
+  padding-left: 40px;
+  padding-right: 40px;
+  // margin-top: 93px;
+  // margin-left: auto;
+  // margin-right: auto;
+ }
+ position: relative;
+  background-color: $second-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 .modal__btn {
   position: absolute;
@@ -57,6 +76,9 @@ textarea {
   letter-spacing: 0.03em;
   color: $accent-secondary-color;
   margin-bottom: 12px;
+  @media screen and (max-width: 479px) {
+  padding-top: 40px;
+  }
 }
 .form {
   margin-left: auto;
@@ -128,8 +150,11 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 .form__input {
-  padding-left: 35px;
+  @media screen and (min-width: 479px) {
   width: 448px;
+  }
+  width: 370px;
+  padding-left: 35px;
   height: 40px;
   cursor: pointer;
 }
@@ -142,6 +167,9 @@ textarea {
   border-color: $accent-color;
 }
 .accept__btn {
+  @media screen and (max-width: 479px) {
+padding-bottom: 40px;
+  }  
   @include centeredFlex();
   justify-content: center;
 }
@@ -163,10 +191,4 @@ textarea {
 .form__btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-.checkbox__conditions {
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $accent-color;
-  text-decoration-line: underline;
-}
+

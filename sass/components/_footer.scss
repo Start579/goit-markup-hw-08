@@ -17,12 +17,19 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .box__content {
+  @media screen and (min-width: 1200px) {
+   align-items: flex-start; 
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .box {
+  @media screen and (min-width: 1200px) {
+    margin: 0; 
+   }
 @media screen and (min-width: 767px) {
 display: flex;
 align-items: baseline;

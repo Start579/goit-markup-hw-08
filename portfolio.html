@@ -18,19 +18,35 @@
   <body>
     <!-- header -->
     <header class="header">
-      <div class="container nav">
+      <div class="container logo__position">
         <nav class="nav">
           <a class="logo nav__link" href="index.html"
             ><span class="nav__logo" lang="en">Web</span>Studio</a
           >
+          <button type="button" class="nav__menu__btn is-open"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button>
+            <svg 
+            width="40" 
+            height="40"
+            aria-label="Мобильное меню"
+            >
+              <use class="nav__menu__open" href="./images/symbol.svg#close"></use>
+              <use class="nav__menu__close" href="./images/symbol.svg#menu"></use>
+            </svg>
+          </button>
+          <div class="nav__menu__container" id="nav__menu__container" data-menu>
+            menu
+          </div>
           <ul class="nav">
             <li class="nav__menu">
-              <a class="nav nav__style link" href="index.html">Студия</a>
+              <a class="nav nav__style link" href="index.html"
+                >Студия</a
+              >
             </li>
             <li class="nav__menu">
-              <a class="nav nav__style current link" href="portfolio.html"
-                >Портфолио</a
-              >
+              <a class="nav nav__style current link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="nav__menu">
               <a class="nav nav__style link" href="#">Контакты</a>
@@ -70,11 +86,13 @@
             <li class="menu__btn__item">
               <button class="menu__btn" type="button">Приложения</button>
             </li>
+            <div class="menu__wrap">
             <li class="menu__btn__item">
               <button class="menu__btn" type="button">Дизайн</button></li>
             <li class="menu__btn__item">
               <button class="menu__btn" type="button">Маркетинг</button>
             </li>
+          </div>
           </ul>
           <ul class="card">
             <li class="card__img">
@@ -284,12 +302,13 @@
     <!--footer-->
     <footer class="footer">
       <div class="container footer__block">
-        <div>
-          <a class="logo nav__link" href="index.html"
+        <div class="box">
+          <div>
+          <a class="logo nav__link--footer" href="index.html"
             ><span class="nav__logo" lang="en">Web</span><span class="nav__logo--color">Studio</span></a
           >
           <address>
-            <ul>
+            <ul class="box__content">
               <li class="box__item">
                 <a
                   class="contact__adress link"
@@ -362,6 +381,7 @@
             </li>
           </ul>
         </div>
+      </div>
         <!--subscribe-->
         <form class="subscribe">
           <p class="subscribe__header">подпишитесь на рассылку</p>

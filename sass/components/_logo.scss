@@ -18,10 +18,12 @@
   color: $second-color;
 }
 .logo {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 767px) {
     font-size: 26px;
     line-height: 1.19;
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
   color: $accent-secondary-color;
   font-weight: $accent-font-weight;
@@ -29,18 +31,23 @@
   font-size: 24px;
   line-height: 1.17;
 }
+.logo.is-open {
+  visibility: hidden;
+}
 .logo__position {
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding-top: 0;
+    padding-bottom: 0;
+margin: auto;
   }
   @media screen and (min-width: 767px) {
+    display: flex;
     padding-top: 26px;
     padding-bottom: 26px;
   }
-  margin-right: 15px;
+   margin-right: 15px;
   padding-top: 16px;
   padding-bottom: 16px;
 }

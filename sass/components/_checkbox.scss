@@ -26,3 +26,13 @@
   left: 52px;
   transform: translateY(20%);
 }
+.checkbox__conditions {
+  @media screen and (min-width: 1199px) {
+    line-height: 1.71;
+  }
+  line-height: 1.17;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  color: $accent-color;
+  text-decoration-line: underline;
+}

@@ -1,9 +1,9 @@
-// @mixin centeredFlex($type: flex) {
-//   display: $type;
-// }
-// @mixin centeredJustify($type: center) {
-//   display: $type;
-// }
-// @mixin centeredAlight($type: center) {
-//   display: $type;
-// }
+@mixin centeredFlex($type: flex) {
+  display: $type;
+}
+@mixin centeredJustify($type: center) {
+  display: $type;
+}
+@mixin centeredAlight($type: center) {
+  display: $type;
+}

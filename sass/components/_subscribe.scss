@@ -1,8 +1,11 @@
 .subscribe {
   @media screen and (min-width: 767px) {
    flex-direction: column;
-  
-      }
+          }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: auto;
+  }
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -14,6 +17,9 @@
     display: flex;
   justify-content: center;
       }
+  @media screen and (min-width: 1199px) {
+        justify-content: flex-start;
+      }
     font-family: $accent-font;
   font-weight: 700;
   font-size: $accent-font-size;
@@ -22,6 +28,9 @@
   text-transform: uppercase;
 }
 .subscribe__field {
+  @media screen and (min-width: 1199px) {
+flex-direction: row;
+      }
   padding: 0;
   margin: 0;
   margin-top: 20px;
@@ -48,6 +57,9 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe__btn {
+  @media screen and (min-width: 1199px) {
+    margin-top: 0;
+          }
   border: none;
   width: 200px;
   height: 50px;
