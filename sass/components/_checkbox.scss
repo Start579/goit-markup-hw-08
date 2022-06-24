@@ -26,12 +26,26 @@
   left: 52px;
   transform: translateY(20%);
 }
-.checkbox__conditions {
+.checkbox__text {
   @media screen and (min-width: 1199px) {
+    font-size: 14px;
     line-height: 1.71;
   }
+  font-size: 12px;
+  line-height: 1.17;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+.checkbox__conditions {
+  @media screen and (min-width: 1199px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  font-size: 12px;
   line-height: 1.17;
   font-style: normal;
+  font-weight: 400;
   letter-spacing: 0.03em;
   color: $accent-color;
   text-decoration-line: underline;
