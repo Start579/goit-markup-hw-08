@@ -18,13 +18,12 @@
   padding-bottom: 60px;
 }
 
-.box__content {
-  @media screen and (min-width: 1200px) {
-   align-items: flex-start; 
-  }
+.box__content {@media screen and (min-width: 767px) {
+  align-items: flex-start; 
+ }
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
 }
 .box {
   @media screen and (min-width: 1200px) {
