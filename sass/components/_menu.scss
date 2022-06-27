@@ -1,14 +1,18 @@
 .menu {
+  
+  @include centeredFlex();
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  max-width: 320px;
   @media screen and (min-width: 767px) {
     justify-content: center;
     margin-bottom: 50px;
-  }
-  @include centeredFlex();
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-bottom: 15px;
+      }
 }
 .menu__wrap {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 40px;
   @media screen and (min-width: 767px) {
     margin-top: 0;
     margin-bottom: 30px;
@@ -16,9 +20,6 @@
   @media screen and (min-width: 1199px) {
      margin-bottom: 50px;
   }
-  display: flex;
-  margin-top: 15px;
-  margin-bottom: 40px;
 }
 .menu__btn__item {
   margin-right: 8px;
