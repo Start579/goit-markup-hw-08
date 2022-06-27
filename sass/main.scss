@@ -25,6 +25,7 @@
 .nav {
   @media screen and (max-width: 767px) {
    padding-top: 16px;
+   gap: 30px;
   }
    @media screen and (min-width: 768px) and (max-width: 1199px){
     flex-wrap: wrap;
@@ -34,18 +35,19 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    // align-items: center;
-     }
+      }
 }
 .container {
-  margin: auto;
+// margin-left: auto;
+// margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
+width: 100%;
+margin: 0 auto;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 450px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
   }
   @media screen and (min-width: 1200px) {
@@ -77,8 +79,3 @@ body.modal-open {
 }
 // шпаргалки
 // flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке)
-// img {
-//   display: block;
-//   max-width: 100%;
-//   height: auto;
-// }

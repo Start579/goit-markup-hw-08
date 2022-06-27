@@ -7,64 +7,64 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  // width: 100%;
   margin: 0 auto;
 }
 @media (min-resolution: 2dppx) {
   .hero__overlay {
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url("../images/hero_mobile_2x.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero_mobile_2x.jpg");
   }
 }
 @media (min-width: 768px) {
   .hero__overlay {
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url("../images/hero_tablet.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero_tablet.jpg");
   }
-@media (min-resolution: 2dppx) {
-  .hero__overlay {
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url("../images/hero_tablet_2x.jpg");
+  @media (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero_tablet_2x.jpg");
+    }
   }
-}
 }
 @media (min-width: 1199px) {
   .hero__overlay {
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url("../images/hero_desktop.jpg");
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero_desktop.jpg");
   }
-@media (min-resolution: 2dppx) {
-  .hero__overlay {
-  background-image: linear-gradient(
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ), url("../images/hero_desktop_2x.jpg");
+  @media (min-resolution: 2dppx) {
+    .hero__overlay {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero_desktop_2x.jpg");
+    }
   }
-}
 }
 .hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
   }
-  text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
 }
 .hero__header {
-  @media screen and (min-width: 1200px) {
-    font-size: 44px;
-    line-height: 1.36;
-    width: 696px;
-  }
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -75,6 +75,11 @@
   text-transform: uppercase;
   color: $second-color;
   width: 360px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+  }
 }
 .hero__btn {
   padding: 10px 32px 10px 32px;

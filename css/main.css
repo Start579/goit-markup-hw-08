@@ -313,6 +313,14 @@ img {
   text-decoration: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .nav__link--footer {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 .nav__logo {
   font-weight: 700;
   font-family: raleway;
@@ -332,6 +340,20 @@ img {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .logo__position {
+    margin-right: 88px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo__position {
+    margin-right: 93px;
+  }
+}
+
 .logo {
   color: #212121;
   font-weight: 700;
@@ -340,54 +362,15 @@ img {
   line-height: 1.17;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: 1.19;
-    margin-right: 88px;
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-right: 93px;
   }
 }
 
 .logo.is-open {
   visibility: hidden;
-}
-
-.logo__position {
-  margin-right: 15px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-@media screen and (min-width: 1200px) {
-  .logo__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin: auto;
-  }
-}
-
-@media screen and (min-width: 767px) {
-  .logo__position {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
 }
 
 .box {
@@ -559,7 +542,6 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -647,7 +629,7 @@ img {
 
 @media screen and (min-width: 479px) and (max-width: 767px) {
   .description {
-    width: 450px;
+    min-width: 320px;
     height: 226px;
   }
 }
@@ -793,12 +775,12 @@ img {
 }
 
 .team__card {
-  background-color: white;
   margin-bottom: 30px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  width: 450px;
+  max-width: 450px;
+  background-color: white;
 }
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -831,7 +813,7 @@ img {
 }
 
 .team__image {
-  width: 450px;
+  max-width: 450px;
 }
 
 .team__header {
@@ -951,9 +933,6 @@ img {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .clients__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -961,9 +940,6 @@ img {
 
 @media screen and (min-width: 1199px) {
   .clients__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -992,7 +968,8 @@ img {
 
 @media screen and (min-width: 1199px) {
   .clients__item {
-    margin-right: 30px;
+    width: calc((100% - 12 * 15px) / 4);
+    margin: 15px;
   }
 }
 
@@ -1024,7 +1001,7 @@ img {
 
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .clients__icon--item {
-    width: 226px;
+    max-width: 226px;
   }
 }
 
@@ -1074,7 +1051,7 @@ img {
           align-items: center;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .box__content {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1252,7 +1229,7 @@ img {
 }
 
 .subscribe__input {
-  width: 450px;
+  min-width: 320px;
   height: 49px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1651,27 +1628,25 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: -30px;
+  gap: 30px;
   margin-top: -30px;
 }
 
 .card__img {
-  margin-left: 30px;
   margin-top: 30px;
   color: currentColor;
   width: 450px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .card__img {
-    width: 370px;
+    width: calc((100% - 2 * 15px) / 2);
   }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .card__img {
-    width: calc((100% - 2 * 30px) / 2);
-    margin: 15px;
+    width: 370px;
   }
 }
 
@@ -1765,10 +1740,8 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   margin-bottom: 15px;
+  max-width: 320px;
 }
 
 @media screen and (min-width: 767px) {
@@ -1849,8 +1822,8 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #ffffff;
   padding: 32px;
   z-index: 999;
@@ -1918,6 +1891,10 @@ textarea {
   padding-top: 48px;
 }
 
+.mobile__pages--position {
+  padding-bottom: 32px;
+}
+
 .mobile__pages__item {
   font-style: normal;
   font-weight: 500;
@@ -1983,12 +1960,18 @@ textarea {
   letter-spacing: 0.02em;
   color: #2196f3;
   padding-left: 40px;
+}
+
+.border {
   border-right: 2px solid #757575;
+  margin-right: -1.5em;
+  padding-right: 10px;
 }
 
 @media screen and (max-width: 767px) {
   .nav {
     padding-top: 16px;
+    gap: 30px;
   }
 }
 
@@ -2015,18 +1998,19 @@ textarea {
 }
 
 .container {
-  margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .container {
-    width: 480px;
+    width: 450px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: 768px;
   }
