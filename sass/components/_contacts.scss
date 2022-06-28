@@ -7,7 +7,7 @@
   color: $accent-font-color;
   transition: color 250ms $cubic;
   fill: #757575;
-  display: flex;
+  @include centeredFlex();
   align-items: center;
 }
 .contact__mail--color,
@@ -21,7 +21,7 @@
     padding-top: 0;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
+    @include centeredFlex();
     align-items: center;
   }
   margin-right: 50px;
@@ -55,9 +55,9 @@
     display: none;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: block;
+    @include centeredFlex(block);
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
+    @include centeredFlex();
   }
 }

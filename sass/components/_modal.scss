@@ -26,7 +26,7 @@
   border-radius: 4px;
   height: 609px;
   padding: auto;
-  display: flex;
+  @include centeredFlex();
   flex-direction: column;
   align-items: center;
   @media screen and (max-width: 479px) {
@@ -78,7 +78,7 @@ textarea {
   }
 }
 .form {
-  display: flex;
+  @include centeredFlex();
   flex-direction: column;
 }
 .form__icon {

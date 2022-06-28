@@ -21,7 +21,7 @@
 .work__text {
   position: absolute;
   bottom: 0;
-  display: flex;
+  @include centeredFlex();
   align-items: center;
   justify-content: center;
   font-family: $accent-font;

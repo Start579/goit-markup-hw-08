@@ -10,7 +10,7 @@
   line-height: 1.18;
   text-align: center;
   color: $accent-bacground-color;
-  display: block;
+  @include centeredFlex(block);
 }
 .clients__icon {
   @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -21,7 +21,7 @@
     justify-content: center;
     flex-wrap: nowrap;
   }
-  display: flex;
+  @include centeredFlex();
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -35,7 +35,7 @@
     margin: 15px;
   }
   width: calc((100% - 4 * 15px) / 2);
-  display: flex;
+  @include centeredFlex();
   margin: 15px;
 }
 .clients__item:last-child {

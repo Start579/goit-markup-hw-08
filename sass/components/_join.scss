@@ -18,18 +18,18 @@
   line-height: $accent-line-height;
   color: $second-color;
   text-transform: uppercase;
-  display: flex;
+  @include centeredFlex();
   justify-content: center;
 }
 .join__icon {
-  display: flex;
+  @include centeredFlex();
   justify-content: center;
   cursor: pointer;
   margin-top: 20px;
 }
 .footer__block {
   @media screen and (min-width: 1200px) {
-    display: flex;
+    @include centeredFlex();
     align-items: baseline;
     @include centeredAlight(baseline);
   }

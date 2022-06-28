@@ -8,7 +8,7 @@
   max-width: 450px;
   background-color: $second-color;
   @media screen and (min-width: 767px) and (max-width: 1199px){
-    display: flex;
+    @include centeredFlex();
     flex-direction: column;
     flex-wrap: wrap;
     width: calc((100% - 2 * 30px) / 2);
@@ -58,7 +58,7 @@
   padding-bottom: 30px;
 }
 .team__icon {
-  display: flex;
+  @include centeredFlex();
   justify-content: center;
   cursor: pointer;
 }
@@ -74,7 +74,7 @@ margin-right: 0;
   border-radius: 50%;
   height: 44px;
   width: 44px;
-  display: flex;
+  @include centeredFlex();
   justify-content: center;
   align-items: center;
   border: none;
