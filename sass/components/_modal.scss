@@ -33,7 +33,7 @@
     padding-left: 40px;
     padding-right: 40px;
   }
-  @media screen and (min-width: 479px) {
+  @include mobile {
     position: absolute;
     padding-left: 40px;
     padding-right: 40px;
@@ -147,7 +147,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 .form__input {
-  @media screen and (min-width: 479px) {
+  @include mobile {
     width: 448px;
   }
   padding-left: 35px;

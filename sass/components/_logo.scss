@@ -2,12 +2,12 @@
   @include centeredFlex();
   justify-content: center;
   text-decoration: none;
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     justify-content: flex-start;
   }
 }
 .nav__logo {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 26px;
     line-height: 1.19;
   }
@@ -21,17 +21,17 @@
   color: $second-color;
 }
 .logo__position {
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-right: 88px;
     padding-top: 24px;
     padding-bottom: 25px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin-right: 93px;
   }
 }
 .logo {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     font-size: 26px;
     line-height: 1.19;
   }

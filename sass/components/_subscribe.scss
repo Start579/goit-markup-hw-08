@@ -1,8 +1,8 @@
 .subscribe {
-  @media screen and (min-width: 767px) {
+  @include tablet {
    flex-direction: column;
           }
-  @media screen and (min-width: 1200px) {
+          @include desktop {
     margin-top: 0;
     margin-left: auto;
   }
@@ -13,11 +13,11 @@
   margin-top: 60px;
 }
 .subscribe__header {
-  @media screen and (min-width: 767px) {
+  @include tablet {
     @include centeredFlex();
   justify-content: center;
       }
-  @media screen and (min-width: 1199px) {
+      @include desktop {
         justify-content: flex-start;
       }
     font-family: $accent-font;
@@ -28,7 +28,7 @@
   text-transform: uppercase;
 }
 .subscribe__field {
-  @media screen and (min-width: 1199px) {
+  @include desktop {
 flex-direction: row;
       }
   padding: 0;
@@ -39,7 +39,7 @@ flex-direction: row;
   align-items: center;
 }
 .subscribe__input {
-  @media screen and (min-width: 1199px) {
+  @include desktop {
     width: 358px;
       }
   min-width: 320px;
@@ -57,7 +57,7 @@ flex-direction: row;
   color: rgba(255, 255, 255, 0.6);
 }
 .subscribe__btn {
-  @media screen and (min-width: 1199px) {
+  @include desktop {
     margin-top: 0;
           }
   border: none;

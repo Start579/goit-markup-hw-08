@@ -565,14 +565,14 @@ img {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_desktop.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desktop.jpg");
   }
 }
 
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero_desktop_2x.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_desktop_2x.jpg");
@@ -641,7 +641,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .description {
     margin-right: 15px;
     width: calc((100% - 6 * 15px) / 4);
@@ -693,7 +693,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .description__item {
     width: 270px;
   }
@@ -798,14 +798,14 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .team__card {
     margin-right: 30px;
     margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .team__card:last-child {
     margin: 0;
   }
@@ -824,7 +824,7 @@ img {
   color: #2f303a;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .team__header {
     font-size: 36px;
     line-height: 1.17;
@@ -911,7 +911,7 @@ img {
   display: block;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .clients {
     font-size: 36px;
     line-height: 1.17;
@@ -937,7 +937,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .clients__icon {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -965,14 +965,14 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .clients__item {
     width: calc((100% - 12 * 15px) / 4);
     margin: 15px;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .clients__item:last-child {
     margin-right: 0;
   }
@@ -1004,7 +1004,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .clients__icon--item {
     width: 170px;
   }
@@ -1064,7 +1064,7 @@ img {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1086,7 +1086,7 @@ img {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .join {
     margin-top: 0;
     margin-left: 165px;
@@ -1158,7 +1158,7 @@ img {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .subscribe {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1183,7 +1183,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .subscribe__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1194,7 +1194,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .subscribe__header {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1218,7 +1218,7 @@ img {
           align-items: center;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .subscribe__field {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1243,7 +1243,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .subscribe__input {
     width: 358px;
   }
@@ -1267,7 +1267,7 @@ img {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .subscribe__btn {
     margin-top: 0;
   }
@@ -1333,7 +1333,7 @@ img {
   }
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 480px) {
   .modal {
     position: absolute;
     padding-left: 40px;
@@ -1507,7 +1507,7 @@ textarea {
   cursor: pointer;
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 480px) {
   .form__input {
     width: 448px;
   }
@@ -1569,7 +1569,7 @@ textarea {
   padding-top: 10px;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .checkbox {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1581,7 +1581,7 @@ textarea {
   padding-left: 2.2em;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .checkbox__option {
     padding-left: 1.2em;
   }
@@ -1618,7 +1618,7 @@ textarea {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .checkbox__text {
     font-size: 14px;
     line-height: 1.71;
@@ -1636,7 +1636,7 @@ textarea {
           text-decoration-line: underline;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .checkbox__conditions {
     font-size: 14px;
     line-height: 1.71;
@@ -1770,7 +1770,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .menu {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1787,14 +1787,14 @@ textarea {
   display: flex;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu__wrap {
     margin-top: 0;
     margin-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .menu__wrap {
     margin-bottom: 50px;
   }

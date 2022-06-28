@@ -5,7 +5,7 @@
   @media screen and (max-width: 767px) {
      max-width: 362px;
   }
-             @media screen and (min-width: 768px) {
+    @include mobile {
     justify-content: center;
     margin-bottom: 50px;
       }
@@ -14,11 +14,11 @@
   margin-top: 15px;
   margin-bottom: 40px;
   @include centeredFlex();
-  @media screen and (min-width: 767px) {
+  @include tablet {
     margin-top: 0;
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 1199px) {
+  @include desktop {
      margin-bottom: 50px;
   }
 }

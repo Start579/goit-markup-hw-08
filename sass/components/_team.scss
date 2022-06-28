@@ -14,13 +14,13 @@
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
-   @media screen and (min-width: 1199px) {
+  @include desktop {
     margin-right: 30px;
     margin-bottom: 0;
   }
 }
 .team__card:last-child {
-  @media screen and (min-width: 1199px) {
+  @include desktop {
    margin: 0;
   }
  }
@@ -34,7 +34,7 @@
   line-height: 1.18;
   text-align: center;
   color: $accent-bacground-color;
-  @media screen and (min-width: 1199px) {
+  @include desktop {
     font-size: 36px;
     line-height: 1.17;
   }

@@ -15,7 +15,7 @@
   padding-bottom: 60px;
 }
 .box__content {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     align-items: flex-start;
   }
   @include centeredFlex();
@@ -23,10 +23,10 @@
   align-items: center;
 }
 .box {
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     margin: 0;
   }
-  @media screen and (min-width: 767px) {
+  @include tablet {
     @include centeredFlex();
     align-items: baseline;
     justify-content: center;
