@@ -1,12 +1,12 @@
 .join {
   @media screen and (min-width: 767px) {
-  margin-top: 0;
-  margin-left: 165px;
-    }
+    margin-top: 0;
+    margin-left: 165px;
+  }
   @media screen and (min-width: 1200px) {
-     margin-left: 70px; 
-    }
-    margin-top: 60px;
+    margin-left: 70px;
+  }
+  margin-top: 60px;
 }
 .join__header {
   @media screen and (min-width: 1200px) {
@@ -24,15 +24,13 @@
 .join__icon {
   display: flex;
   justify-content: center;
-  // @include centeredFlex();
-  // @include centeredJustify();
   cursor: pointer;
   margin-top: 20px;
 }
 .footer__block {
-   @media screen and (min-width: 1200px) {
- display: flex;
- align-items: baseline;
-   @include centeredAlight(baseline);
-}
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    @include centeredAlight(baseline);
+  }
 }

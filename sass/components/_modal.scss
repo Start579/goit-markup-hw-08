@@ -1,17 +1,17 @@
 .backdrop {
-@media screen and (max-width: 479px) {
-  padding: 93px 15px;
-}
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   visibility: visible;
   transition: opacity 500ms $cubic;
-overflow-y: scroll;
+  overflow-y: scroll;
+  padding: 93px 15px;
+  @media screen and (max-width: 479px) {
+  }
 }
 .backdrop.is-hidden {
   visibility: hidden;
@@ -19,25 +19,30 @@ overflow-y: scroll;
   pointer-events: none;
 }
 .modal {
-  @media screen and (min-width: 479px) {
-  position: absolute;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }  
- @media screen and (max-width: 479px) {
-  padding-left: 40px;
-  padding-right: 40px;
- }
- position: relative;
+  position: relative;
   background-color: $second-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  height: 609px;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 479px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: 479px) {
+    position: absolute;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 .modal__btn {
   position: absolute;
@@ -69,12 +74,12 @@ textarea {
   color: $accent-secondary-color;
   margin-bottom: 12px;
   @media screen and (max-width: 479px) {
-  padding-top: 40px;
+    padding-top: 40px;
   }
 }
 .form {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 .form__icon {
   position: absolute;
@@ -143,9 +148,8 @@ textarea {
 }
 .form__input {
   @media screen and (min-width: 479px) {
-  width: 448px;
+    width: 448px;
   }
-  width: 370px;
   padding-left: 35px;
   height: 40px;
   cursor: pointer;
@@ -160,8 +164,8 @@ textarea {
 }
 .accept__btn {
   @media screen and (max-width: 479px) {
-padding-bottom: 40px;
-  }  
+    padding-bottom: 40px;
+  }
   @include centeredFlex();
   justify-content: center;
 }
@@ -183,4 +187,3 @@ padding-bottom: 40px;
 .form__btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-

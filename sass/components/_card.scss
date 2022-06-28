@@ -8,11 +8,11 @@
   margin-top: 30px;
   color: currentColor;
   width: 450px;
-  @media screen and (min-width: 767px) and (max-width: 1199px){
-        width: calc((100% - 2 * 15px) / 2);
-    }
-  @media screen and (min-width: 1200px){
-  width: 370px;
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
+    width: calc((100% - 2 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 .card__img:hover .card__before__hidden {
@@ -47,14 +47,14 @@
   line-height: 1.56;
   color: $second-color;
 }
-  .card__before--first {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-left: 1px solid #eeeeee;
-    border-right: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
+.card__before--first {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     padding-bottom: 56px;
   }

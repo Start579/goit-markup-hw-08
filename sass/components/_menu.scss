@@ -1,9 +1,7 @@
 .menu {
-  
-  @include centeredFlex();
+    @include centeredFlex();
   flex-wrap: wrap;
   margin-bottom: 15px;
-  max-width: 320px;
   @media screen and (min-width: 767px) {
     justify-content: center;
     margin-bottom: 50px;

@@ -3,36 +3,33 @@
   line-height: 1.71;
   color: $second-color;
 }
-
 .box__item:first-child {
   margin-top: 20px;
 }
-
 .box__item {
   margin-top: 8px;
 }
-
 .footer {
   background-color: $accent-bacground-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
-.box__content {@media screen and (min-width: 1200px) {
-  align-items: flex-start; 
- }
+.box__content {
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .box {
   @media screen and (min-width: 1200px) {
-    margin: 0; 
-   }
-@media screen and (min-width: 767px) {
-display: flex;
-align-items: baseline;
-justify-content: center;
-flex-direction: row;
-}
+    margin: 0;
+  }
+  @media screen and (min-width: 767px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: row;
+  }
 }

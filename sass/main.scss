@@ -4,7 +4,6 @@
 @import "./utils/breakpoint";
 @import "./base/normalise";
 @import "./base/styles";
-// @import "./components/page-header";
 @import "./components/logo";
 @import "./components/nav";
 @import "./components/contacts";
@@ -24,26 +23,25 @@
 
 .nav {
   @media screen and (max-width: 767px) {
-   padding-top: 16px;
-   gap: 30px;
+    padding-top: 16px;
+    gap: 30px;
   }
-   @media screen and (min-width: 768px) and (max-width: 1199px){
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     flex-wrap: wrap;
     margin: -5px;
     align-items: center;
-  @include centeredFlex();
+    @include centeredFlex();
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-      }
+  }
 }
 .container {
-// margin-left: auto;
-// margin-right: auto;
+  position: relative;
   padding-left: 15px;
   padding-right: 15px;
-width: 100%;
-margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 450px;
   }
