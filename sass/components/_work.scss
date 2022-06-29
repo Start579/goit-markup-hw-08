@@ -13,10 +13,13 @@
   margin-right: 0;
 }
 .section__ident {
+  padding-top: 0;
   @media screen and (max-width: 1199px) {
     display: none;
   }
-  padding-top: 0;
+  @include desktop {
+    padding-bottom: 94px;
+  }
 }
 .work__text {
   position: absolute;

@@ -61,7 +61,7 @@
   justify-content: center;
   transition: fill 250ms $cubic, border 250ms $cubic;
 }
-.clients-icon-item:hover {
+.clients__icon--item:hover {
   border: 1px solid $accent-color;
   fill: $accent-color;
   transition: fill 250ms $cubic, border 250ms $cubic;

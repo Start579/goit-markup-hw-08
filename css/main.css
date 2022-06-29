@@ -609,7 +609,7 @@ img {
   .hero__header {
     font-size: 44px;
     line-height: 1.36;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -705,6 +705,20 @@ img {
   text-transform: uppercase;
   color: #2f303a;
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .description__header {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .description__text {
@@ -736,6 +750,12 @@ img {
 @media screen and (max-width: 1199px) {
   .section__ident {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__ident {
+    padding-bottom: 94px;
   }
 }
 
@@ -1010,7 +1030,7 @@ img {
   }
 }
 
-.clients-icon-item:hover {
+.clients__icon--item:hover {
   border: 1px solid #2196f3;
   fill: #2196f3;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1761,41 +1781,27 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 15px;
-}
-
-@media screen and (max-width: 767px) {
-  .menu {
-    max-width: 362px;
-  }
+  grid-gap: 8px;
+  grid-row-gap: 15px;
 }
 
 @media screen and (min-width: 480px) {
   .menu {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 
-.menu__wrap {
-  margin-top: 15px;
-  margin-bottom: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media screen and (min-width: 768px) {
-  .menu__wrap {
-    margin-top: 0;
+  .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .menu__wrap {
+  .menu {
     margin-bottom: 50px;
   }
 }
@@ -1861,6 +1867,16 @@ textarea {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .menu-container.is-open {
@@ -1946,7 +1962,12 @@ textarea {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-top: 302px;
+}
+
+.mobile__contacts--position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .mobile__contacts--phone {
